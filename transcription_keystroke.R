@@ -1,5 +1,16 @@
+##This script depends on the packages 'tictoc' and 'keypress', the latter of which will not work in the GUI version of R; so this should be run in a terminal window.
+
+#To begin recording, type transcription_keystroke() in an R window. You will then be prompted for a logfile name. Once you've entered a logfile name,
+#You will be prompted to hit "Enter" to begin recording. Once you do hit "enter", the recording begins and you can press keys as you wish
+#To end the recording, press 'x'
+#Once you do so, a data frame will appear with the event timings, and a .csv file will be written to your working directory
+
+#Feel free to get in touch if you have any questions
+
 require(tictoc)
 require(keypress)
+
+
 
 transcription_keystroke<-function(){
 
